@@ -1,15 +1,15 @@
-# vue-starter
+# Vue Starter
 
-> A Vue.js project
+> A full-featured Vue.js starter project.
 
-## Build Setup
+## NPM Commands
 
 ``` bash
 # install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm start # OR npm run dev
 
 # build for production with minification
 npm run build
@@ -18,4 +18,55 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Features
+
+This currently offers the following, out of the box:
+
+- [x] The versatile and performant [Vue.js](https://vuejs.org) framework.
+- [x] JS bundling and hot reloading with [Webpack](https://webpack.github.io/).
+- [x] Next generation JS compilation with [Babel](babeljs.io).
+- [x] Flexible task runner / build tool with [NPM scripts](https://docs.npmjs.com/misc/scripts).
+
+_More to come._
+
+### Planned Features
+
+- [ ] Linting with:
+	- [x] [ESLint](http://eslint.org/).
+	- [x] [stylelint](https://stylelint.io/).
+	- [ ] [HTMLTidy](http://www.html-tidy.org/)?.
+- [ ] CSS pre-compilation with [SASS](http://sass-lang.com/).
+- [ ] Source maps.
+- [ ] Production ready build with [CSS](https://github.com/css/csso)[^1], [JS](https://github.com/mishoo/UglifyJS2), and [HTML](https://github.com/kangax/html-minifier) minification.
+- [ ] Reporting on bundle / asset size analytics.
+- [ ] [Pre-rendering for SEO benefits](http://vuejs-templates.github.io/webpack/prerender.html).
+- [ ] Code splitting with [Webpack](https://webpack.github.io/).
+- [ ] Local and mobile browser testing, including live reload, with [BrowserSync](browsersync.io/).
+- [ ] Full featured code tests (headless Chrome?), including:
+	- [ ] Unit testing.
+	- [ ] End to end testing.
+	- [ ] Visual regression testing.
+
+### Features Under Consideration
+
+- [ ] [PostCSS](http://postcss.org/) post-processing with cool features such as:
+	- [ ] Lint CSS for browser support against caniuse database with [doiuse](https://github.com/anandthakker/doiuse).
+	- [ ] Ensure consistent colors with [css-colorguard](https://github.com/SlexAxton/css-colorguard).
+	- [ ] What else?? Needs research...
+- [ ] Static assets with version hashes.
+
+## References
+
+- [Webpack template docs](http://vuejs-templates.github.io/webpack/).
+- [vue-loader docs](http://vuejs.github.io/vue-loader).
+
+## Credits
+
+Thank you to the following individuals/projects/repos for your influence in creating this project:
+
+- [VueJS templates](https://github.com/vuejs-templates/webpack): for great examples.
+- [villeristi](https://github.com/villeristi/vue.js-starter-template): for a killer starter template.
+- [BrowserSync](https://github.com/BrowserSync/recipes/blob/master/recipes/webpack.babel/app.js): for their recipes (albeit outdated).
+<!-- - [myxingke](https://github.com/myxingke/webpack-browser-sync-vue-demo): for one of the only examples I found that allowed webpack and browser-sync to play nice together. -->
+
+[^1]: [CSS minification benchmarks](https://goalsmashers.github.io/css-minification-benchmark/)
