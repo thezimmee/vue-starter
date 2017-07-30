@@ -26,22 +26,23 @@ This currently offers the following, out of the box:
 - [x] JS bundling and hot reloading with [Webpack](https://webpack.github.io/).
 - [x] Next generation JS compilation with [Babel](babeljs.io).
 - [x] Flexible task runner / build tool with [NPM scripts](https://docs.npmjs.com/misc/scripts).
+- [x] **Linting** with:
+	- [x] [ESLint](http://eslint.org/).
+	- [x] [stylelint](https://stylelint.io/).
+	- [x] ~~[HTMLTidy](http://www.html-tidy.org/)~~ [htmllint-loader](https://github.com/TheBlackBolt/htmllint-loader).
+- [x] Source maps.
 
 _More to come._
 
 ### Planned Features
 
-- [ ] Linting with:
-	- [x] [ESLint](http://eslint.org/).
-	- [x] [stylelint](https://stylelint.io/).
-	- [ ] [HTMLTidy](http://www.html-tidy.org/)?.
 - [ ] CSS pre-compilation with [SASS](http://sass-lang.com/).
-- [ ] Source maps.
 - [ ] Production ready build with [CSS](https://github.com/css/csso)[^1], [JS](https://github.com/mishoo/UglifyJS2), and [HTML](https://github.com/kangax/html-minifier) minification.
 - [ ] Reporting on bundle / asset size analytics.
 - [ ] [Pre-rendering for SEO benefits](http://vuejs-templates.github.io/webpack/prerender.html).
 - [ ] Code splitting with [Webpack](https://webpack.github.io/).
 - [ ] Local and mobile browser testing, including live reload, with [BrowserSync](browsersync.io/).
+- [ ] Create a webpack loader for [HTMLTidy](http://www.html-tidy.org/).
 - [ ] Full featured code tests (headless Chrome?), including:
 	- [ ] Unit testing.
 	- [ ] End to end testing.

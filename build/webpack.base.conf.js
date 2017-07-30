@@ -17,8 +17,7 @@ module.exports = {
 		path: config.build.assetsRoot,
 		filename: '[name].js',
 		publicPath: process.env.NODE_ENV === 'production' ?
-			config.build.assetsPublicPath :
-			config.dev.assetsPublicPath
+			config.build.assetsPublicPath : config.dev.assetsPublicPath
 	},
 	resolve: {
 		extensions: ['.js', '.vue', '.json'],
@@ -27,13 +26,25 @@ module.exports = {
 		}
 	},
 	module: {
-		rules: [{
+		rules: [
+			{
 				test: /\.(js|vue)$/,
 				loader: 'eslint-loader',
 				enforce: 'pre',
 				include: [resolve('src'), resolve('test')],
 				options: {
 					formatter: require('eslint-friendly-formatter')
+				}
+			},
+			{
+				test: /\.vue$/,
+				loader: 'htmllint-loader',
+				enforce: 'pre',
+				exclude: /node_modules/,
+				query: {
+					config: '.htmllintrc',
+					failOnError: true,
+					failOnWarning: true
 				}
 			},
 			{

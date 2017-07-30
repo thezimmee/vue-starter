@@ -2,6 +2,8 @@
 
 module.exports = {
 	"plugins": {
+		"postcss-import": {},
+		"stylelint": {},
 		// To edit target browsers: use "browserlist" field in package.json.
 		"autoprefixer": {}
 	}
