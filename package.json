@@ -54,6 +54,7 @@
     "stylelint": "^8.0.0",
     "stylelint-processor-html": "^1.0.0",
     "sw-precache-webpack-plugin": "^0.11.4",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.0.2",
     "vue-style-loader": "^3.0.1",
@@ -71,6 +72,7 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "Safari >= 7",
+    "IE 11"
   ]
 }

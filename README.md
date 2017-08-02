@@ -32,13 +32,13 @@ This does offers the following, out of the box:
 	- [x] ~~[HTMLTidy](http://www.html-tidy.org/)~~ [htmllint-loader](https://github.com/TheBlackBolt/htmllint-loader).
 - [x] Source maps.
 - [x] CSS pre-compilation with [SASS](http://sass-lang.com/).
+- [x] Production ready build with [CSS](https://github.com/css/csso)[^1], [JS](https://github.com/mishoo/UglifyJS2), and [HTML](https://github.com/kangax/html-minifier) minification.
+- [x] Reporting on bundle / asset size analytics.
 
 _More to come._
 
 ### Planned Features
 
-- [ ] Production ready build with [CSS](https://github.com/css/csso)[^1], [JS](https://github.com/mishoo/UglifyJS2), and [HTML](https://github.com/kangax/html-minifier) minification.
-- [ ] Reporting on bundle / asset size analytics.
 - [ ]  [Pre-rendering for SEO benefits](http://vuejs-templates.github.io/webpack/prerender.html).
 - [ ] Code splitting with [Webpack](https://webpack.github.io/).
 - [ ] Local and mobile browser testing, including live reload, with [BrowserSync](browsersync.io/).
@@ -47,6 +47,7 @@ _More to come._
 	- [ ] Unit testing.
 	- [ ] End to end testing.
 	- [ ] Visual regression testing.
+- [ ] Minify `<script>` tags in HTML files.
 
 ### Features Under Consideration
 
