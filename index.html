@@ -24,18 +24,22 @@
 	<% for (var chunk of webpack.chunks) {
 		for (var file of chunk.files) {
 			if (file.match(/\.(js|css)$/)) { %>
-		<link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
-		<% }}} %>
+				<link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
+	<% }}} %>
 </head>
 
 <body>
+	<!-- JavaScript disabled message. -->
 	<noscript>
-		This is your fallback content in case JavaScript fails to load.
+		<p><strong>Uh oh... it looks like JavaScript is disabled.</strong> For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com/" target="_blank">instructions how to enable JavaScript in your web browser</a>. Please enable JavaScript and come back and visit us!</p>
 	</noscript>
+
+	<!-- App markup. -->
 	<div id="app"></div>
+
 	<!-- Todo: only include in production -->
 	<%= htmlWebpackPlugin.options.serviceWorkerLoader %>
-		<!-- built files will be auto injected -->
+	<!-- built files will be auto injected -->
 </body>
 
 </html>
