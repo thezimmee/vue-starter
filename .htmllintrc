@@ -17,11 +17,11 @@
 		"width"
 	],
 	"attr-name-ignore-regex": false,
-	"attr-name-style": "dash",
+	"attr-name-style": "",
 	"attr-no-dup": true,
 	"attr-no-unsafe-chars": true,
 	"attr-quote-style": "double",
-	"attr-req-value": true,
+	"attr-req-value": false,
 	"class-no-dup": true,
 	"class-style": "dash",
 	"csslint": false,
@@ -49,7 +49,7 @@
 	"line-max-len": false,
 	"line-max-len-ignore-regex": "/href/g",
 	"page-title": true,
-	"spec-char-escape": true,
+	"spec-char-escape": false,
 	"table-req-caption": false,
 	"table-req-header": true,
 	"tag-bans": [

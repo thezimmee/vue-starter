@@ -1,0 +1,37 @@
+<div>
+	<header v-if="post.title">
+		<h2>{{ post.title }}</h2>
+	</header>
+
+	<form name="editPostForm" @submit.prevent="handleSubmit" v-if="post">
+		<div v-if="message">
+			<div>{{ message.text }}</div>
+		</div>
+
+		<div v-if="errors.any()" v-for="error in errors.errors">
+			<strong>Doh!</strong> {{ error.msg }}
+		</div>
+
+		<div>
+			<label for="title">Title</label>
+			<div>
+				<input type="text" id="title" name="title" data-vv-rules="required" data-vv-as="Post title" v-model="post.title" v-validate>
+			</div>
+		</div>
+
+		<div>
+			<label for="body">Body</label>
+			<div>
+				<textarea id="body" name="body" rows="5" data-vv-rules="required" data-vv-as="Post body" v-model="post.body" v-validate></textarea>
+			</div>
+		</div>
+
+		<div>
+			<button type="submit" :disabled="errors.any()">Save</button>
+		</div>
+	</form>
+
+	<hr>
+
+	<router-link to="/posts">Back to posts</router-link>
+</div>

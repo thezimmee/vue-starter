@@ -18,6 +18,14 @@ npm run build
 npm run build --report
 ```
 
+## To do
+
+- [x] Create Home and NotFound pages.
+- [x] Add rest of pages.
+- [ ] Move index.html to src folder.
+- [ ] Move pages from /components to /pages?
+- [ ]  [Add login](https://auth0.com/blog/build-an-app-with-vuejs/).
+
 ## Features
 
 This does offers the following, out of the box:
