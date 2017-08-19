@@ -22,7 +22,7 @@ npm run build --report
 
 - [x] Create Home and NotFound pages.
 - [x] Add rest of pages.
-- [ ] Move index.html to src folder.
+- [x] Move index.html to src folder.
 - [ ] Move pages from /components to /pages?
 - [ ]  [Add login](https://auth0.com/blog/build-an-app-with-vuejs/).
 
