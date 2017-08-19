@@ -28,7 +28,7 @@ npm run build --report
 
 ## Features
 
-This does offers the following, out of the box:
+This offers the following, out of the box:
 
 - [x] The versatile and performant [Vue.js](https://vuejs.org) framework.
 - [x] JS bundling and hot reloading with [Webpack](https://webpack.github.io/).
