@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/pages/Home';
-import Posts from '@/pages/Posts';
-import Post from '@/pages/Post';
-import CreatePost from '@/pages/CreatePost';
-import EditPost from '@/pages/EditPost';
-import NotFound from '@/pages/NotFound';
+import Home from '@/components/Home';
+import Posts from '@/components/Posts';
+import Post from '@/components/Post';
+import CreatePost from '@/components/CreatePost';
+import EditPost from '@/components/EditPost';
+import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
 

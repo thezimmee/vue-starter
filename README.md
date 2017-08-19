@@ -18,14 +18,6 @@ npm run build
 npm run build --report
 ```
 
-## To do
-
-- [x] Create Home and NotFound pages.
-- [x] Add rest of pages.
-- [x] Move index.html to src folder.
-- [ ] Move pages from /components to /pages?
-- [ ]  [Add login](https://auth0.com/blog/build-an-app-with-vuejs/).
-
 ## Features
 
 This offers the following, out of the box:
@@ -47,6 +39,7 @@ _More to come._
 
 ### Planned Features
 
+- [ ] User authentication.
 - [ ]  [Pre-rendering for SEO benefits](http://vuejs-templates.github.io/webpack/prerender.html).
 - [ ] Code splitting with [Webpack](https://webpack.github.io/).
 - [ ] Local and mobile browser testing, including live reload, with [BrowserSync](browsersync.io/).
